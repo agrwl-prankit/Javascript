@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Append text</title>
+    </head>
+    <body>
+        <p id="text">Hello World</p>
+        <button id="button">Change Text</button>
+        <p id="second">Javascript is...</p>
+        <button id="sbutton">Append text</button>
+        <p id="empty"></p>
+        <button id="create">Create text</button>
+
+        <script>
+            document.getElementById("sbutton").onclick = function() {
+                document.getElementById("second").innerHTML = "I think " + document.getElementById("second").innerHTML + "awesome!";
+            }
+            document.getElementById("create").onclick = function() {
+                document.getElementById("empty").innerHTML = "<h1>Hey</h1> Hey there!";
+            }
+        </script>
+    </body>
+</html>
