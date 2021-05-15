@@ -1,0 +1,38 @@
+<html>
+    <head><title>Array</title></head>
+    <body>
+
+        <script>
+            // type 1 :
+            var a1 = new Array();
+            a1[0] = "abc";
+            a1[1] = "def";
+            console.log(a1[0]);
+            
+            // type 2 :
+            var a2 = ["123", "456"];
+            console.log(a2);
+            // O/P: ["123","456"]
+
+            a2.push("789"); // add element to array
+            console.log(a2);
+            // O/P: ["123","456","789"]
+
+            a2.splice(1,1); // delete index 1 one times
+            console.log(a2);
+            // O/P: ["123","789"]
+
+            a2.push("456");
+            a2.splice(1,2)  // delete index 1 two times
+            console.log(a2);
+            // O/P: ["123"]
+
+            a2.push("456");
+            a2.push("789");
+            a2.splice(1,0,"abc") // delete index 1 zero times and then add "abc" at index 1
+            console.log(a2);
+            // O/P: ["123","abc","456","789"]
+
+        </script>
+    </body>
+</html>
