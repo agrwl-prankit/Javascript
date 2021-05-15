@@ -1,0 +1,19 @@
+<html>
+    <head><title>Variables</title></head>
+    <body>
+
+        <input id="input" type="text">
+        <button id="button">Change the text</button>
+        <p id="p">This is some text</p>
+
+        <script>
+            var x = 5; alert(x);
+            x++; alert(x);
+            x = "Prankit"; alert(x);
+            document.getElementById("button").onclick = function(){
+                var x = document.getElementById("input").value;
+                document.getElementById("p").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
