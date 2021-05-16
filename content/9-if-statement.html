@@ -1,0 +1,20 @@
+<html>
+    <head><title>If statements</title></head>
+    <body>
+
+        <p>What is magic word?</p>
+        <p><input type="text" id="input"></p>
+        <p><button id="button">Check</button></p>
+
+        <script>
+            document.getElementById("button").onclick = function(){
+                var word = document.getElementById("input").value;
+                var act = "jinga lala hu";
+                document.getElementById("input").value = "";
+                if(word == act) alert("You got it");
+                else alert("Try again");
+            }
+        </script>
+
+    </body>
+</html>
